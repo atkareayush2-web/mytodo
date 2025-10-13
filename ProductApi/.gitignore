@@ -1,0 +1,12 @@
+# Angular frontend
+frontend/node_modules
+frontend/dist
+
+# .NET backend
+backend/bin/
+backend/obj/
+backend/appsettings.Development.json
+
+# General
+.vscode/
+.env

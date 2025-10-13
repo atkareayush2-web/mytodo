@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\dtos\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\dtos\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\data\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\data\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|c:\\users\\ayushatkare\\productapi\\todoapi\\todoapi\\migrations\\20250929130215_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD1B53F-31A6-470F-8AA5-D3E0C3F801B4}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\migrations\\20250929130215_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TodoApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:13:35.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "TodoApi\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "TodoApi\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:10:53.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoController.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Controllers\\TodoController.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Controllers\\TodoController.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Controllers\\TodoController.cs",
+              "RelativeToolTip": "TodoApi\\Controllers\\TodoController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:04:15.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250929130215_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Migrations\\20250929130215_InitialCreate.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Migrations\\20250929130215_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Migrations\\20250929130215_InitialCreate.cs",
+              "RelativeToolTip": "TodoApi\\Migrations\\20250929130215_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:02:15.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\appsettings.json",
+              "RelativeToolTip": "TodoApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-29T12:56:14.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\DTOs\\TodoItemDto.cs",
+              "RelativeDocumentMoniker": "TodoApi\\DTOs\\TodoItemDto.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\DTOs\\TodoItemDto.cs",
+              "RelativeToolTip": "TodoApi\\DTOs\\TodoItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:11:10.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Program.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Program.cs",
+              "RelativeToolTip": "TodoApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T12:55:18.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TodoContext.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Data\\TodoContext.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Data\\TodoContext.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Data\\TodoContext.cs",
+              "RelativeToolTip": "TodoApi\\Data\\TodoContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T12:53:10.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Models\\TodoItem.cs",
+              "RelativeToolTip": "TodoApi\\Models\\TodoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T12:50:48.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\AyushAtkare\\ProductApi\\TodoApi\\TodoApi\\Models\\User.cs",
+              "RelativeToolTip": "TodoApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T12:50:29.472Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
