@@ -78,11 +78,16 @@ ConnectionStrings: {
 }
 
 💻 Screenshots 
+ ## 💻 Screenshots
 
-available
+### 🏠 Todo Dashboard
+![Todo Dashboard](assets/task-list.png)
 
+### ➕ Add New Task
+![Add Task](assets/edit-task.png)
 
-Add some screenshots here later after you finalize UI.
+etc added in the assets 
+
 
 📜 License
 

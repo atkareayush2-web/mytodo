@@ -1,4 +1,5 @@
 <div class="auth-container d-flex justify-content-center align-items-center vh-100">
+
   <div class="auth-card p-5 shadow-lg rounded-4">
 
     <h2 class="text-center mb-4">{{ toggleForm ? 'Create Account' : 'Welcome Back' }}</h2>
@@ -50,5 +51,6 @@
       <button type="submit" class="btn btn-gradient w-100 mb-3" [disabled]="loginForm.invalid">Login</button>
       <p class="text-center">Don't have an account? <a (click)="toggleFormView(true)">Register</a></p>
     </form>
+
   </div>
 </div>
