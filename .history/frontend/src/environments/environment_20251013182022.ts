@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
+  production: false,
   apiBaseUrl: 'https://localhost:7056/api'  // 👈 your .NET backend base URL
 };
