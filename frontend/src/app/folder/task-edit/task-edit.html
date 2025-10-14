@@ -1,0 +1,49 @@
+<div class="edit-task-container">
+  <div class="card edit-task-card shadow">
+    <h3 class="card-title">Edit Task</h3>
+
+    <!-- Task Title -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input 
+        type="text" 
+        id="title" 
+        class="form-control" 
+        [(ngModel)]="task.title"
+        placeholder="Enter task title"
+      >
+    </div>
+
+    <!-- Task Description -->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea 
+        id="description" 
+        class="form-control" 
+        [(ngModel)]="task.description" 
+        placeholder="Enter task description"
+        rows="3">
+      </textarea>
+    </div>
+
+    <!-- Completed Toggle -->
+    <div class="form-group toggle-group">
+      <label>Status:</label>
+      <label class="switch">
+        <input type="checkbox" [(ngModel)]="task.completed">
+        <span class="slider round"></span>
+      </label>
+      <span class="status-text">{{ task.completed ? 'Completed' : 'Pending' }}</span>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons mt-3">
+      <button class="btn btn-gradient-primary" (click)="updateTask()">
+        Update Task
+      </button>
+      <button class="btn btn-gradient-secondary" (click)="goBack()">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+/* Container fills full viewport with gradient background */
+.create-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  padding: 20px;
+}
+
+/* Card styling */
+.create-task-card {
+  background-color: #1e1e2f;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Title */
+.card-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #00fff7;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #a1a1b5;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2a2a3d;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Status Toggle */
+.status-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.status-label {
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.status-label.completed {
+  background-color: #00ff94;
+  color: #1e1e2f;
+}
+
+.status-label.pending {
+  background-color: #ffb400;
+  color: #1e1e2f;
+}
+
+.btn-toggle {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn-gradient-primary {
+  background: linear-gradient(45deg, #00fff7, #00bcd4);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-gradient-danger {
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-danger:hover {
+  transform: scale(1.05);
+}

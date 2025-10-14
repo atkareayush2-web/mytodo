@@ -1,0 +1,110 @@
+/* ------------------------ */
+/* Container */
+.welcome-container {
+  padding: 40px;
+  background: linear-gradient(145deg, #1e1e2f, #27293d);
+  min-height: 100vh;
+  color: #f0f0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Greeting Card */
+.greeting-card {
+  background: #2c2f44;
+  padding: 40px 30px;
+  border-radius: 16px;
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.greeting-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 198, 255, 0.3);
+}
+
+.greeting-card h1 {
+  color: #00e5ff;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #cfd0d6;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(135deg, #ff8c42, #ff3d00);
+  color: #fff;
+  border: none;
+}
+
+.btn-gradient-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 61, 0, 0.3);
+}
+
+.btn-outline-danger {
+  border: 2px solid #ff4c4c;
+  color: #ff4c4c;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.btn-outline-danger:hover {
+  background: #ff4c4c;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Tips Section */
+.tips-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.tip-card {
+  background: #2c2f44;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 280px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 198, 255, 0.2);
+}
+
+.tip-card h5 {
+  color: #00e5ff;
+  font-weight: 600;
+}
+
+.tip-card p {
+  font-size: 0.95rem;
+  color: #cfd0d6;
+}

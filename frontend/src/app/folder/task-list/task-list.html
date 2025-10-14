@@ -1,0 +1,85 @@
+<div class="task-container mt-4">
+
+  <!-- Header with welcome message and create task button -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-gradient">Welcome, {{ currentUser.fullName }}!</h2>
+    <div>
+      <button class="btn btn-outline-secondary me-2" (click)="goBack()">🏠 Home</button>
+      <button class="btn btn-gradient-primary" (click)="createTask()">+ New Task</button>
+    </div>
+  </div>
+
+  <!-- Tasks Table -->
+  <div *ngIf="tasks.length > 0; else noTasks" class="flex-grow-1">
+    <div class="table-responsive">
+      <table class="table table-hover table-dark align-middle text-center modern-table">
+        <thead class="table-gradient">
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let task of tasks" class="task-row">
+            <td>{{ task.title }}</td>
+            <td>{{ task.description || '—' }}</td>
+
+            <!-- Status Badge -->
+            <td>
+              <span 
+                [ngClass]="{
+                  'badge-completed': task.isCompleted,
+                  'badge-pending': !task.isCompleted
+                }">
+                {{ task.isCompleted ? 'Completed' : 'Pending' }}
+              </span>
+            </td>
+
+            <!-- Action Buttons -->
+            <td>
+              <button 
+                class="btn btn-sm btn-gradient-success me-1" 
+                (click)="toggleComplete(task)">
+                {{ task.isCompleted ? 'Undo' : 'Complete' }}
+              </button>
+
+              <button 
+                class="btn btn-sm btn-gradient-info me-1" 
+                (click)="editTask(task)">
+                Edit
+              </button>
+
+              <button 
+                class="btn btn-sm btn-gradient-danger" 
+                (click)="deleteTask(task.taskId)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- No Tasks Template -->
+  <ng-template #noTasks>
+    <div class="alert alert-info text-center mt-4">
+      You have no tasks yet. Click "New Task" to add one!
+    </div>
+  </ng-template>
+
+  <!-- Optional: Tips Section -->
+  <div class="tips-section mt-5 d-flex justify-content-between">
+    <div class="card tip-card shadow-sm flex-fill me-3" *ngFor="let tip of [1,2,3]">
+      <div class="card-body">
+        <h5>💡 Tip {{tip}}</h5>
+        <p *ngIf="tip === 1">Stay organized and complete tasks on time. Use the complete or edit buttons!</p>
+        <p *ngIf="tip === 2">Prioritize tasks to manage your time efficiently.</p>
+        <p *ngIf="tip === 3">Regularly review completed tasks to track your progress and improve productivity.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

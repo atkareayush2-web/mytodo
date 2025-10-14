@@ -1,0 +1,63 @@
+<div class="auth-container d-flex justify-content-center align-items-center vh-100">
+
+  <!-- Card -->
+  <div class="auth-card p-5 shadow-lg rounded-4">
+
+    <!-- Toggle Header -->
+    <h2 class="text-center mb-4">
+      {{ toggleForm ? 'Create Account' : 'Welcome Back' }}
+    </h2>
+
+    <!-- ------------------------
+         Registration Form
+    ------------------------ -->
+    <div *ngIf="toggleForm">
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" [(ngModel)]="registerObj.fullName" placeholder="Enter your full name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="registerObj.emailId" placeholder="Enter your email">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="registerObj.password" placeholder="Enter password">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="registerObj.mobileNo" placeholder="Enter mobile number">
+      </div>
+
+      <button class="btn btn-gradient w-100 mb-3" (click)="onRegister()">Register</button>
+
+      <p class="text-center">
+        Already have an account? <a (click)="toggleFormView(false)">Login</a>
+      </p>
+    </div>
+
+    <!-- ------------------------
+         Login Form
+    ------------------------ -->
+    <div *ngIf="!toggleForm">
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="loginObj.emailId" placeholder="Enter your email">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="loginObj.password" placeholder="Enter password">
+      </div>
+
+      <button class="btn btn-gradient w-100 mb-3" (click)="onLogin()">Login</button>
+
+      <p class="text-center">
+        Don't have an account? <a (click)="toggleFormView(true)">Register</a>
+      </p>
+    </div>
+  </div>
+</div>

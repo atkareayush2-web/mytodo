@@ -1,0 +1,52 @@
+.auth-container {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.auth-card {
+  background: #1c1c1e;
+  color: #fff;
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #ff00ff, #800080);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.5);
+}
+
+a {
+  cursor: pointer;
+  color: #ff00ff;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-control {
+  background-color: #2a2a2e;
+  border: none;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+h2 {
+  font-weight: 700;
+  color: #ff00ff;
+}

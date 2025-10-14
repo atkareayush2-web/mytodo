@@ -1,0 +1,83 @@
+.userlist-container {
+  padding: 30px;
+  background: linear-gradient(145deg, #1e1e2f, #27293d);
+  min-height: 100vh;
+  color: #f0f0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+h3 {
+  color: #ca16b2;
+  font-weight: 750;
+}
+
+/* Search input */
+.search-input {
+  width: 300px;
+  background: #a8abc0;
+  color: #b15252;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+/* Table Styles */
+.table-dark {
+  background: #6971aa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(86, 140, 155, 0.1);
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+/* Table Header Gradient */
+.table-gradient {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #cf68be;
+}
+
+/* Gradient Buttons */
+.btn-gradient-info {
+  background: linear-gradient(135deg, #9813d6, #8b2fc0);
+  border: none;
+  color: #fff;
+}
+.btn-gradient-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 61, 0, 0.3);
+}
+
+.btn-gradient-danger {
+  background: linear-gradient(135deg, #3e20c2, #49aad1);
+  border: none;
+  color: #fff;
+}
+.btn-gradient-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+}
+
+/* Responsive Table Scroll */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+.btn-gradient-logout {
+  background: linear-gradient(135deg, #ff00ff, #800080);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 14px;
+  transition: 0.3s;
+}
+.btn-gradient-logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(128, 0, 128, 0.3);
+}

@@ -1,0 +1,46 @@
+<div class="edit-user-container">
+
+  <div class="edit-user-card">
+    <h2 class="card-title">👤 Edit User</h2>
+
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input
+        type="text"
+        id="fullName"
+        [(ngModel)]="user.fullName"
+        placeholder="Enter full name"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="emailId">Email</label>
+      <input
+        type="email"
+        id="emailId"
+        [(ngModel)]="user.emailId"
+        placeholder="Enter email address"
+      />
+    </div>
+
+    <!-- Mobile Number -->
+    <div class="form-group">
+      <label for="mobileNo">Mobile Number</label>
+      <input
+        type="text"
+        id="mobileNo"
+        [(ngModel)]="user.mobileNo"
+        placeholder="Enter mobile number"
+      />
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="form-actions">
+      <button class="btn btn-gradient-primary" (click)="updateUser()">Update User</button>
+      <button class="btn btn-gradient-danger" (click)="router.navigate(['/user-list'])">Cancel</button>
+    </div>
+  </div>
+
+</div>

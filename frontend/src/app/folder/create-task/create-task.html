@@ -1,0 +1,50 @@
+<div class="create-task-container">
+
+  <div class="create-task-card">
+    <h2 class="card-title">📝 Create New Task</h2>
+
+    <!-- Task Title -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="taskObj.title"
+        placeholder="Enter task title"
+      />
+    </div>
+
+    <!-- Task Description -->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        [(ngModel)]="taskObj.description"
+        placeholder="Enter task description"
+      ></textarea>
+    </div>
+
+    <!-- Completed Toggle -->
+    <!--<div class="form-group">
+      <label>Status</label>
+      <div class="status-toggle">
+        <span
+          class="status-label"
+          [ngClass]="{'completed': taskObj.completed, 'pending': !taskObj.completed}"
+        >
+          {{ taskObj.completed ? 'Completed' : 'Pending' }}
+        </span>
+        <button class="btn btn-toggle" (click)="taskObj.completed = !taskObj.completed">
+          Toggle
+        </button>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="form-actions">
+      <button class="btn btn-gradient-primary" (click)="createTask()">Create Task</button>
+      <button class="btn btn-gradient-danger" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+
+</div>

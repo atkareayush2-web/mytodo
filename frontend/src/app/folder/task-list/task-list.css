@@ -1,0 +1,185 @@
+/* ===========================
+   Container
+=========================== */
+.task-container {
+  padding: 20px 30px;
+  min-height: 100vh; /* Fill full screen */
+  display: flex;
+  flex-direction: column;
+  background: #0d1117; /* Subtle dark theme */
+  color: #fff;
+}
+
+/* ===========================
+   Table Styles
+=========================== */
+.modern-table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.table-gradient {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: #fff;
+  font-weight: 600;
+}
+
+.task-row {
+  transition: background 0.3s, transform 0.2s;
+}
+
+.task-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: scale(1.01);
+}
+
+/* ===========================
+   Status Badges
+=========================== */
+.badge-completed,
+.badge-pending {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+}
+
+.badge-completed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge-pending {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-completed:hover,
+.badge-pending:hover {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.btn-gradient-primary {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-primary:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.btn-gradient-success {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-success:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.btn-gradient-info {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-info:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+.btn-gradient-danger {
+  background: linear-gradient(90deg, #ff6a6a, #ff0000);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-danger:hover {
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* ===========================
+   Gradient Text
+=========================== */
+.text-gradient {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* ===========================
+   Tips Section
+=========================== */
+.tips-section {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 20px;
+}
+
+.tip-card {
+  flex: 1;
+  min-width: 200px;
+  border-radius: 12px;
+  background: #1f1f1f;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.tip-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.tip-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* ===========================
+   Responsive Adjustments
+=========================== */
+@media (max-width: 768px) {
+  .task-container {
+    padding: 15px;
+  }
+
+  .tips-section {
+    flex-direction: column;
+  }
+
+  .tip-card {
+    margin-bottom: 15px;
+  }
+}

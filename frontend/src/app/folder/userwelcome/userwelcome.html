@@ -1,0 +1,45 @@
+<div class="welcome-container">
+
+  <!-- Greeting Card -->
+  <div class="card greeting-card text-center shadow-lg">
+    <h1>Welcome, {{ userName }}!</h1>
+    <p class="subtitle">Manage your tasks efficiently and stay productive 🚀</p>
+    
+    <div class="button-group mt-4">
+      <button class="btn btn-gradient-primary me-3" (click)="goToTaskList()">
+        View My Tasks
+      </button>
+      <button class="btn btn-gradient-secondary me-3" (click)="goToCreateTask()">
+        + Create Task
+      </button>
+      <button class="btn btn-outline-danger" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </div>
+
+  <!-- Optional: Quick Links / Tips Section -->
+<div class="tips-section mt-5">
+  <div class="card tip-card shadow-sm mb-3">
+    <div class="card-body">
+      <h5>💡 Tip 1: Prioritize Tasks</h5>
+      <p>Focus on the most important tasks first. Use due dates to manage urgent and high-priority items effectively.</p>
+    </div>
+  </div>
+
+  <div class="card tip-card shadow-sm mb-3">
+    <div class="card-body">
+      <h5>💡 Tip 2: Break Down Big Tasks</h5>
+      <p>Split large tasks into smaller, manageable steps. This helps you stay motivated and track progress easily.</p>
+    </div>
+  </div>
+
+  <div class="card tip-card shadow-sm">
+    <div class="card-body">
+      <h5>💡 Tip 3: Regularly Review</h5>
+      <p>Check your task list daily. Mark completed items, update deadlines, and plan ahead to stay organized.</p>
+    </div>
+  </div>
+</div>
+
+</div>
