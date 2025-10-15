@@ -31,7 +31,7 @@ namespace Enquiry.API.Models
         // -------------------------------
         [Required]
         [MaxLength(100)]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         [MaxLength(500)]
         public string? Description { get; set; }
