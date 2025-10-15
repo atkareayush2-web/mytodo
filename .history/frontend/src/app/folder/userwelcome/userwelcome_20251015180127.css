@@ -40,15 +40,15 @@
 
 /* Buttons */
 .btn-gradient-primary {
-  background: linear-gradient(135deg, #41df63, #0aeb60);
+  background: linear-gradient(135deg, #00c6ff, #0b3f7e);
   color: #fff;
   border: none;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-gradient-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(30, 170, 60, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(30, 170, 60, 0.3);
 }
 
 .btn-gradient-secondary {
@@ -59,11 +59,11 @@
 
 .btn-gradient-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(27, 55, 179, 0.3);
+  box-shadow: 0 8px 15px rgba(27, 55, 179, 0.3);
 }
 
 .btn-outline-danger {
- background: linear-gradient(135deg, #db5f39, #d11c1c);
+ background: linear-gradient(135deg, #00c6ff, #0b3f7e);
   color: #fff;
   border: none;
 }
@@ -71,7 +71,7 @@
 
 .btn-outline-danger:hover {
    transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(255, 61, 0, 0.3);
+  box-shadow: 0 8px 15px rgba(255, 61, 0, 0.3);
 }
 
 
@@ -80,7 +80,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 80px;
   width: 100%;
   max-width: 1000px;
 }

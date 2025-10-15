@@ -34,13 +34,13 @@
 
 .subtitle {
   color: #cfd0d6;
-  font-size: 2.1rem;
+  font-size: 3.1rem;
   margin-top: 10px;
 }
 
 /* Buttons */
 .btn-gradient-primary {
-  background: linear-gradient(135deg, #41df63, #0aeb60);
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
   color: #fff;
   border: none;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -48,39 +48,39 @@
 
 .btn-gradient-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(30, 170, 60, 0.3);
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
 }
 
 .btn-gradient-secondary {
-  background: linear-gradient(135deg, #00c6ff, #0b3f7e);
+  background: linear-gradient(135deg, #ff8c42, #ff3d00);
   color: #fff;
   border: none;
 }
 
 .btn-gradient-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(27, 55, 179, 0.3);
+  box-shadow: 0 8px 15px rgba(255, 61, 0, 0.3);
 }
 
 .btn-outline-danger {
- background: linear-gradient(135deg, #db5f39, #d11c1c);
-  color: #fff;
-  border: none;
+  border: 2px solid #ff4c4c;
+  color: #ff4c4c;
+  background: transparent;
+  transition: all 0.2s;
 }
-
 
 .btn-outline-danger:hover {
-   transform: translateY(-2px);
-  box-shadow: 0 20px 20px rgba(255, 61, 0, 0.3);
+  background: #ff4c4c;
+  color: #fff;
+  transform: translateY(-2px);
 }
-
 
 /* Tips Section */
 .tips-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 80px;
   width: 100%;
   max-width: 1000px;
 }
