@@ -1,0 +1,156 @@
+/* General container */
+.welcome-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Orbitron', 'Poppins', sans-serif;
+  color: #fff;
+  background: #0a0a0f; /* Dark cyberpunk background */
+}
+
+/* Greeting Card */
+.greeting-card {
+  background: linear-gradient(145deg, #1c1c2a, #0d0d15);
+  border: 2px solid #ff00ff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.greeting-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,0,255,0.2) 0%, transparent 70%);
+  animation: rotateGlow 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.greeting-card h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+.greeting-card p.subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Button Group */
+.button-group button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+/* Primary Neon Button */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #ff00ff, #00ffff);
+  color: #0a0a0f;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.btn-gradient-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+/* Secondary Neon Button */
+.btn-gradient-secondary {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  color: #0a0a0f;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+.btn-gradient-secondary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff;
+}
+
+/* Outline Danger Neon */
+.btn-outline-danger {
+  background: transparent;
+  color: #ff004f;
+  border: 2px solid #ff004f;
+  text-shadow: 0 0 5px #ff004f;
+}
+
+.btn-outline-danger:hover {
+  background: #ff004f;
+  color: #0a0a0f;
+  box-shadow: 0 0 15px #ff004f, 0 0 25px #ff004f;
+}
+
+/* Tips Section */
+.tips-section {
+  margin-top: 3rem;
+}
+
+.tip-card {
+  background: #11111a;
+  border-left: 5px solid #ff00ff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+.tip-card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+.tip-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+  text-shadow: 0 0 2px #00ffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .greeting-card h1 {
+    font-size: 2rem;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}

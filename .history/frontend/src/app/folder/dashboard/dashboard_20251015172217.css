@@ -1,0 +1,61 @@
+/* ===========================
+   Dashboard Card Gradients
+=========================== */
+.card-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient colors */
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+}
+
+.card-gradient:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.7);
+  filter: brightness(1.15);
+}
+
+/* ===========================
+   Stats Container
+=========================== */
+.stats-container {
+  display: flex;
+  gap: 15px; /* space between cards */
+}
+
+/* ===========================
+   Individual Stat Cards
+=========================== */
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Gradient Text for Welcome
+=========================== */
+.text-gradient {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard property */
+  font-weight: 700;
+}
+
+/* ===========================
+   Responsive Adjustments
+=========================== */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stat-card {
+    margin-bottom: 15px;
+  }
+}

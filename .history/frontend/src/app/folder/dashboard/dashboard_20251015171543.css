@@ -1,0 +1,47 @@
+/* dashboard.css */
+.dashboard-container {
+  padding: 20px 30px;
+  min-height: 100vh; /* Fill the full screen */
+  display: flex;
+  flex-direction: column;
+  background: #323e4b; /* Light blue background */
+  color: #000; /* Text color for contrast */
+}
+.dashboard-container {
+  background: linear-gradient(135deg, #d0e7ff, #a0d4ff);
+  color: #000;
+}
+
+
+/* ===========================
+   Dashboard Cards (Stats)
+=========================== */
+.stat-card {
+  border-radius: 10px;
+  transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); /* subtle initial glow */
+}
+
+/* Hover Effect */
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.6); /* stronger glow */
+}
+
+/* Highlight Selected Filter */
+.stat-card.border {
+  box-shadow: 0 0 15px 3px rgba(102, 126, 234, 0.7);
+  border-color: #66a3ff !important;
+}
+
+/* Optional: Make text gradient for all cards */
+.stat-card h4,
+.stat-card h2 {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+}

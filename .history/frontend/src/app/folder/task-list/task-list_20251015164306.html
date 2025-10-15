@@ -1,4 +1,4 @@
-<div class="task-container">
+<div class="task-container mt-4">
 
   <!-- Header with welcome message and create task button -->
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -9,6 +9,18 @@
     <button class="btn btn-gradient-primary" (click)="goDashboard()">📊 Dashboard</button>
   </div>
 </div>
+
+<!-- Optional: Tips Section -->
+  <div class="tips-section mt-5 d-flex justify-content-between">
+    <div class="card tip-card shadow-sm flex-fill me-3" *ngFor="let tip of [1,2,3]">
+      <div class="card-body">
+        <h5>💡 Tip {{tip}}</h5>
+        <p *ngIf="tip === 1">Stay organized and complete tasks on time. Use the complete or edit buttons!</p>
+        <p *ngIf="tip === 2">Prioritize tasks to manage your time efficiently.</p>
+        <p *ngIf="tip === 3">Regularly review completed tasks to track your progress and improve productivity.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Tasks Table -->
   <div *ngIf="tasks.length > 0; else noTasks" class="flex-grow-1">

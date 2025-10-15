@@ -1,0 +1,24 @@
+.dashboard-container {
+  padding: 20px;
+  color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  background-clip: text;              /* ✅ Add standard version */
+  -webkit-background-clip: text;      /* ✅ For Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+}
+
+.table-gradient {
+  background: linear-gradient(90deg, #141E30, #243B55);
+}
+
+.stat-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}

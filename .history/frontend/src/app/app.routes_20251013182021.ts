@@ -7,7 +7,6 @@ import { UserWelcomeComponent } from './folder/userwelcome/userwelcome';
 import { CreateTaskComponent } from './folder/create-task/create-task';
 import { TaskListComponent } from './folder/task-list/task-list';
 import { TaskEditComponent } from './folder/task-edit/task-edit';
-import { DashboardComponent } from './folder/dashboard/dashboard';  
 
 export const routes: Routes = [
   {
@@ -43,10 +42,6 @@ export const routes: Routes = [
   path: 'edit-task/:id',
   component: TaskEditComponent
 },
-  { path: 'dashboard', 
-    component: DashboardComponent 
-  },
-  
   {
     path: '**',
     redirectTo: 'login' // fallback route

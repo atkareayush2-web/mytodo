@@ -27,7 +27,6 @@ export class CreateTaskComponent {
     taskId: 0,           // backend will assign if auto-generated
     title: '',
     description: '',
-    dueDate: '',      // new due date field
     completed: false,     // default status
     userId: 0            // will set from logged-in user
   };

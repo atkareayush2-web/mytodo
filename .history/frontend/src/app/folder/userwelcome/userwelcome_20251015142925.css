@@ -80,13 +80,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
+  gap: 20px;
   width: 100%;
   max-width: 1000px;
 }
 
 .tip-card {
-  background: #3e3757;
+  background: #432c44;
   color: #fff;
   border-radius: 12px;
   padding: 20px;

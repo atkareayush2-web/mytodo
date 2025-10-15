@@ -97,11 +97,6 @@ export class TaskListComponent implements OnInit {
     this.router.navigate(['/welcome']);
   }
 
-  //goto dashboard
-goDashboard() {
-  this.router.navigateByUrl('/dashboard'); // Make sure this route exists in your router
-}
-
   // -------------------------------------------
   // Mark task as complete or undo
   // -------------------------------------------

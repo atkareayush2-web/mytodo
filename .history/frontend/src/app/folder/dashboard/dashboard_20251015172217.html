@@ -1,0 +1,84 @@
+<div class="dashboard-container mt-4">
+
+  <!-- Welcome Header -->
+  <h2 class="text-gradient mb-4">📊 Welcome, {{ currentUser.fullName | uppercase }}!</h2>
+
+  <!-- Summary / Filter Cards -->
+  <div class="stats-container d-flex justify-content-between mb-4 button-group">
+    <div 
+      class="stat-card shadow-sm flex-fill text-center mx-2 p-3"
+      [ngClass]="{
+        'card-gradient': currentFilter === 'all',
+        'bg-dark text-white': currentFilter !== 'all'
+      }"
+      (click)="setFilter('all')"
+      style="cursor:pointer;"
+    >
+      <h4>Total Tasks</h4>
+      <h2>{{ totalTasks }}</h2>
+    </div>
+
+    <div 
+      class="stat-card shadow-sm flex-fill text-center mx-2 p-3"
+      [ngClass]="{
+        'card-gradient': currentFilter === 'completed',
+        'bg-success text-white': currentFilter !== 'completed'
+      }"
+      (click)="setFilter('completed')"
+      style="cursor:pointer;"
+    >
+      <h4>Completed</h4>
+      <h2>{{ completedTasks }}</h2>
+    </div>
+
+    <div 
+      class="stat-card shadow-sm flex-fill text-center mx-2 p-3"
+      [ngClass]="{
+        'card-gradient': currentFilter === 'pending',
+        'bg-warning text-dark': currentFilter !== 'pending'
+      }"
+      (click)="setFilter('pending')"
+      style="cursor:pointer;"
+    >
+      <h4>Pending</h4>
+      <h2>{{ pendingTasks }}</h2>
+    </div>
+  </div>
+
+  <!-- Tasks Table -->
+  <div *ngIf="displayedTasks.length > 0; else noTasks">
+    <h4 class="mb-3">📝 Your Tasks</h4>
+    <table class="table table-dark table-hover text-center align-middle">
+      <thead class="table-gradient">
+        <tr>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of displayedTasks | slice:0:5">
+          <td>{{ task.title }}</td>
+          <td>
+            <span 
+              [ngClass]="{
+                'badge bg-success': task.isCompleted,
+                'badge bg-warning text-dark': !task.isCompleted
+              }">
+              {{ task.isCompleted ? 'Completed' : 'Pending' }}
+            </span>
+          </td>
+          <td>{{ task.dueDate ? (task.dueDate | date:'mediumDate') : '—' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- No Tasks Template -->
+  <ng-template #noTasks>
+    <div class="alert alert-info text-center mt-4">
+      No tasks to show for this filter. 📭
+    </div>
+  </ng-template>
+
+</div>

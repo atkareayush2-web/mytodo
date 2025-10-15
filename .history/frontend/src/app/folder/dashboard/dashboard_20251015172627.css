@@ -1,0 +1,143 @@
+/* ===========================
+   Dashboard Container
+=========================== */
+.dashboard-container {
+  padding: 20px 30px;
+  min-height: 100vh;
+  background: #0d1117; /* Dark cyberpunk background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   Welcome Text / Gradient
+=========================== */
+.text-gradient {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-gradient:hover {
+  text-shadow: 0 0 8px #667eea, 0 0 12px #764ba2;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Stats Cards / Filters
+=========================== */
+.stats-container {
+  display: flex;
+  gap: 15px; /* Space between cards */
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+/* Gradient background for selected filter */
+.card-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.7);
+  filter: brightness(1.15);
+}
+
+/* ===========================
+   Table Styles
+=========================== */
+table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.table-gradient {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: #fff;
+  font-weight: 600;
+}
+
+.table-dark {
+  background-color: #1b1b1b;
+}
+
+.table-hover tbody tr:hover {
+  background: linear-gradient(135deg, #667eea33, #764ba233);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Status Badges
+=========================== */
+.badge-completed,
+.badge-pending {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.badge-completed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge-pending {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-completed:hover,
+.badge-pending:hover {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   No Tasks Message
+=========================== */
+.alert-info {
+  background: #182848;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+  text-align: center;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stat-card {
+    margin-bottom: 15px;
+  }
+}

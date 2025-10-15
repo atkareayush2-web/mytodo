@@ -1,14 +1,13 @@
-<div class="task-container">
+<div class="task-container mt-4">
 
   <!-- Header with welcome message and create task button -->
   <div class="d-flex justify-content-between align-items-center mb-4">
-  <h2 class="text-gradient welcome-text">Welcome, {{ currentUser.fullName | uppercase }}!</h2>
-  <div class="button-group">
-    <button class="btn btn-gradient-primary" (click)="goBack()">🏠 Home</button>
-    <button class="btn btn-gradient-primary" (click)="createTask()">+ New Task</button>
-    <button class="btn btn-gradient-primary" (click)="goDashboard()">📊 Dashboard</button>
+    <h2 class="text-gradient">Welcome, {{ currentUser.fullName | uppercase }}!</h2>
+    <div>
+      <button class="btn btn-outline-secondary me-2" (click)="goBack()">🏠 Home</button>
+      <button class="btn btn-gradient-primary" (click)="createTask()">+ New Task</button>
+    </div>
   </div>
-</div>
 
   <!-- Tasks Table -->
   <div *ngIf="tasks.length > 0; else noTasks" class="flex-grow-1">
@@ -18,7 +17,6 @@
           <tr>
             <th>Title</th>
             <th>Description</th>
-            <th>Due Date</th> <!-- 🗓️ Added Column -->
             <th>Status</th>
             <th>Actions</th>
           </tr>
@@ -27,11 +25,6 @@
           <tr *ngFor="let task of tasks" class="task-row">
             <td>{{ task.title }}</td>
             <td>{{ task.description || '—' }}</td>
-
-             <!-- 🗓️ Due Date -->
-          <td>
-            {{ task.dueDate ? (task.dueDate | date: 'dd MMM yyyy') : '—' }}
-          </td>
 
             <!-- Status Badge -->
             <td>
